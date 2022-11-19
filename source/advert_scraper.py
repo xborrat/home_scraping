@@ -14,7 +14,7 @@ def data_extract(links_file):
         links_list = f.readlines()
         f.close()
 
-    with open('dataset/houses_to_sell_df.csv', 'a+', newline='') as csvfile: # hcange w to a to overwrite
+    with open('dataset/houses_to_sell_df.csv', 'a+', newline='') as csvfile:
         
 
         for link in links_list:
