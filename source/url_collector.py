@@ -21,9 +21,8 @@ def page_link_collector(container_url:str):
    }"""
 
    # importem la web amb els enllaços als anuncis que ens interessen.
-   # page = requests.get(container_url, headers=headers)
    t0 = time.time()
-   page = requests.get(container_url)
+   page = requests.get(container_url, headers=headers)
    # càlculem el temps que tarda en descarregar el contingut
    delay = time.time() - t0
    soup = BeautifulSoup(page.content, 'html.parser')
